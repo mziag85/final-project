@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+body{
+    background-color: var(--color-body);
+    font-family: var(--font-main);
+}
+
+:root{
+    --font-main: "Poppins", sans-serif;
+    --color-a: chocolate;
+    --color-aHover: gray;
+    --color-aActive: red;
+    --color-primary: rgb(75, 4, 4);
+    --color-header:rgb(228, 214, 81);
+    --color-body: cornsilk;
+    --color-text: rgb(173, 75, 75);
+    --space-little: 50px;
+    --space-large: 150px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+.header{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap:20px;
+    background-color: var(--color-header);
+    font-size: 20px;
+    margin-bottom: var(--space-little);
+} 
+a{
+    color: var(--color-a);
+}
+a:hover{
+    color: var(--color-aHover);
+}
+a:active{
+    color: var(--color-aActive) ;
+}
+.header__logo{
+    display: flex; 
+    align-items: center; 
+    font-size: 30px;
+}
+.hlogo__image{
+    width: 50px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.nav__items{
+    display: flex;
+    gap: 20px;
+    
+}
+
+/* main */
+main{
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+ .section__first{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px 30px;
+    flex-wrap: wrap;
+    background-color: rgba(232, 161, 198, 0.333);
+    margin-bottom: var(--space-large);
+ }
+
+.secFirst__foto{
+    width: 40%;
+    border-radius: 50px;
+    border: 5px solid rgba(224, 131, 131, 0.47);
+    margin-bottom: var(--space-little);
+    
+}
+.secFirst__text--features{
+   text-align: center;
+   width: 60%;
+   margin-bottom: var(--space-little);
+
+}
+.main__title{
+   color: var(--color-text);
+   font-size: 30px;
+   margin-bottom: 20px;
+}
+.main__text{
+   color: var(--color-text);
+   font-size: 18px;
+   
+}
+.section--features{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 40px;
+    margin-bottom: var(--space-large);
+}
+.foto--features{
+    width:30%;
+    height: auto;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.travel__foto{
+    border: 5px solid rgba(152, 100, 11, 0.338);
+}
+.books__foto{
+     
+    border: 5px solid rgba(97, 24, 45, 0.403);
+    
+}
+.travel{
+background-color: rgba(150, 69, 69, 0.199);
+}
+.books{
+    background-color: rgba(194, 165, 199, 0.232);
+
+}
+
+.text--features{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    color: var(--color-text);
+}
+.icons{
+    width: 7%;
+    height: auto;
+}
+.iconTravel{
+    animation: spin 20s linear reverse infinite;
+}
+
+    @keyframes spin{
+    from{
+        transform: rotate(0deg);
+        
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+.iconBook{
+    animation: pulse 1s linear infinite;
+}
+
+    @keyframes pulse{
+    from{
+        transform: scale(1);
+        
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+
+
+/* footer */
+.footer{
+    background-color: var(--color-text);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    
+}
+
+.footer__image--features{
+    width: 30px;
+    height: auto;
+}
+
+/* about */
+
+.nextSite--features{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    
+}
+.about__foto{
+    border: 10px solid rgba(135, 45, 72, 0.564);
+    border-radius: 150px;
+    
+}
+
+/* idea */
+.idea__foto{
+    width: 40%;
+    height: auto;
+    border: 10px solid rgb(103, 92, 27);
+    border-radius: 150px;
+}
+.spanABout{
+    color: rgb(38, 38, 248);
+    margin-right: 2px;
+   
+}
+
+/* contact */
+.registration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reg__title{
+     color:rgba(130, 10, 104, 0.607);
+     margin-bottom: 20px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: var(--space-little);
+    
+}
+
+.field label{
+    font-size: 18px;
+    color: var(--color-a);
+
+}
+.input{
+    background-color: rgb(223, 198, 231);
+    border-radius: 10px;
+    padding: 3px 5px;
+    
+}
+.icons2{
+    width: 30px;
+}
+.mailto__me, .callto__me{
+     display: flex;
+     align-items: center;
+     gap: 10px;
+}
+.map{
+    width: 40%;
+    height: 40vh;
+}
+
