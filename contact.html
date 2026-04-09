@@ -35,27 +35,36 @@
     </header>
     <main>
 
-      <div class="registration">
-        <h2 class="reg__title">გამიზიარეთ ემოცია:</h2>
+      <div class="contact">
+        <h2 class="contact__title">გამიზიარეთ ემოცია:</h2>
 
         <form class="form">
         <!-- სახელი -->
-         <div class="field">
-          <label for="name">თქვენი სახელი</label>
-          <input type="text" name="name" id="name" class="input">
-         </div>
-           <!-- მეილი -->
-         <div class="field">
-          <label for="mail">თქვენი ელ.ფოსტა</label>
-          <input type="text" name="mail" id="mail" class="input">
-         </div>
-         <!-- ტელეფონი -->
-         <div class="field">
-          <label for="tel">თქვენი ტელ.ნომერი</label>
-          <input type="text" name="tel" id="tel" class="input">
-         </div>
-
          
+          <input type="text" name="name" id="name" class="input"
+          placeholder="თქვენი სახელი" required>
+        
+         
+         <!-- ტელეფონი -->
+        
+          <input type="text" name="tel" id="tel" class="input"
+          placeholder="ტელეფონის ნომერი"  required>
+       
+
+           <!-- მეილი -->
+         
+          <input type="text" name="mail" id="mail" class="input"
+          placeholder="მეილი" required>
+
+          <!-- შეტყობინება -->
+        <input type="text" name="message" id="message" class="input"
+          placeholder="თქვენი შეტყობინება">
+
+        
+          <!-- გაგზავნა -->
+        <a href="./contact.html">
+        <button class="btn" type="submit">გაგზავნა</button>
+        </a>
 
            <div class="mailto__me">
              <img class="icons2" src="./images/iconEmail.png" alt="icon email">
