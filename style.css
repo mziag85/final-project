@@ -306,7 +306,7 @@ background-color: rgba(150, 69, 69, 0.199);
 
 
 
-@media(max-width:375px){
+@media(max-width:480px){
 .header{
     padding: 10px 5px;
 }
