@@ -318,6 +318,7 @@ background-color: rgba(150, 69, 69, 0.199);
     }
 
 .nav__items{
+    display: flex;
     flex-direction: column;
     gap: 3px;
     font-size: 18px;
@@ -343,6 +344,7 @@ background-color: rgba(150, 69, 69, 0.199);
 }
 
 .section--features{
+    display: flex;
     flex-direction: column;
     gap: 15px;
     text-align: center;
@@ -381,7 +383,7 @@ h2{
     border: 5px solid rgba(135, 45, 72, 0.564);
     width: 50%;
 }
-}
+
 .idea__foto{
     width: 50%;
     border: 5px solid rgb(103, 92, 27);
@@ -390,6 +392,7 @@ h2{
 .form{
     width: 80%;
     justify-content: center;
+}
 }
 
 
