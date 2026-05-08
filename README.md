@@ -7,6 +7,8 @@
 - HTML5
 - CSS
 - CSS Variables
+- JavaScript
+- burger Menu
 - Responsive design
 
 <!-- Markdown -->ფუნქციონალი:
